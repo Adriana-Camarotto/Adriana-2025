@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import CardsSection from './components/CardSection'
+import VideoTextSection from './components/VideoTextSection'
 import { LogoCarousel } from './components/Carousel/LogoCarousel'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Header />
       <Hero />
       <CardsSection />
-       <LogoCarousel />
+      <LogoCarousel />
+      <VideoTextSection />
     </div>
   )
 }
