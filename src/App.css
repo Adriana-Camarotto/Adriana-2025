@@ -1,0 +1,96 @@
+#root {
+  /* max-width: 100%; */
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* position: relative; */
+  font-family: "IBM Plex Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #fdfafa;
+  font-size: 18px;
+}
+
+/* Add this class for fade-in animation */
+.animate-fade-in {
+  animation: fade-in 3s ease-in;
+}
+
+.animate-ping {
+  animation: ping 3s cubic-bezier(0, 0, 1, 2) infinite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4.375rem;
+  line-height: 1.1;
+  animation: fade-in 1.2s ease-in;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  animation: fade-in 1.2s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Responsovity */
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.438rem;
+  }
+  #root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #root {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
