@@ -37,7 +37,7 @@ const CardsSection = () => {
 return (
   <section className="bg-[#FFFFFF] top-0 text-white p-6 md:px-6 py-24 md:py-40 relative  ">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-[-150px] md:mt-[-250px]  relative z-50  hover:text-[#FFFFFF] transition duration-300">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-[-150px] md:mt-[-250px]  relative z-30  hover:text-[#FFFFFF] transition duration-300">
         {cards.map((card, index) => (
           <div
             key={index}
