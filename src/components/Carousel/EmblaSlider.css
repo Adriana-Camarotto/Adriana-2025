@@ -1,0 +1,46 @@
+.embla {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.embla__slide {
+  /* flex: 0 0 100%; mobile: 1 logo visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__logo {
+  max-width: auto;
+  max-height: 40px;
+}
+
+/* Big screens: shows 6 logos */
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 calc(100% / 6);
+  }
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+@media (max-width: 640px) {
+  .embla__slide {
+    flex: 0 0 calc(100% / 2);
+  }
+}
