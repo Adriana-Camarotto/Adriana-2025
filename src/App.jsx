@@ -4,7 +4,8 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import CardsSection from './components/CardSection'
 import VideoTextSection from './components/VideoTextSection'
-import { LogoCarousel } from './components/Carousel/LogoCarousel'
+import { LogoCarousel } from './components/Carousels/LogoCarousel'
+import { TestimonialCarousel } from './components/Carousels/testimonialsCarousel'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <CardsSection />
       <LogoCarousel />
       <VideoTextSection />
+      <TestimonialCarousel />
     </div>
   )
 }

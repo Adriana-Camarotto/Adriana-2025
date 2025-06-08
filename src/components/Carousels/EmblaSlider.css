@@ -15,7 +15,6 @@
 }
 
 .embla__slide {
-  /* flex: 0 0 100%; mobile: 1 logo visible */
   display: flex;
   justify-content: center;
   align-items: center;
