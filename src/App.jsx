@@ -7,11 +7,11 @@ import VideoTextSection from './components/VideoTextSection'
 import { LogoCarousel } from './components/Carousels/LogoCarousel'
 import { TestimonialCarousel } from './components/Carousels/TestimonialsCarousel'
 import { Business } from './components/business/Business'
+import { ExpertStats } from './components/ExpertStats'
+import { ContactSection } from './components/ContactSection'
 
 
 function App() {
-
-
   return (
     <div className="font-sans antialiased text-gray-900">
       <Header />
@@ -20,7 +20,9 @@ function App() {
       <LogoCarousel />
       <VideoTextSection />
       <TestimonialCarousel />
-      <Business />     
+      <Business />
+      <ExpertStats />
+      <ContactSection />
     </div>
   )
 }
