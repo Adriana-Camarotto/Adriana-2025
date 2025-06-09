@@ -1,6 +1,6 @@
 .faq-section {
   color: white;
-  width: 600px;
+  /* max-width: 650px; */
 }
 
 .faq-section h3 {
@@ -18,7 +18,7 @@
 .faq-toggle {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* max-width: 520px; */
   background: transparent;
   color: white;
   padding: 1.6rem;

@@ -25,7 +25,7 @@ export function FaqAccordion() {
       <ul className="faq-list">
         {faqs.map((question, index) => (
           <li key={index}>
-            <button onClick={() => toggle(index)} className="faq-toggle">
+            <button onClick={() => toggle(index)} className="faq-toggle w-[100%] md:w-[600px] text-left">
               {question}
               <span>{openIndex === index ? '-' : '+'}</span>
             </button>

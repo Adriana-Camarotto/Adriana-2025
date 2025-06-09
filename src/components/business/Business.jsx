@@ -1,11 +1,12 @@
 import { FaqAccordion } from '../FAQ/FaqAccordion'
 import { InsightsNews } from '../insightsNews/insightsNews';
+import PolygonBackground from '../../assets/geometric.png';
 
 export function Business() {
   return (
     <>
-      <section className="business-section bg-[#000000] top-0 mt-[-150px] md:mt-[-160px] text-white p-6 py-30 md:px-6 py-24 md:py-40 lg:py-40 relative overflow-hidden">
-        <div className="flex justify-center items-center font-700 text-[40px] mt-[250px] md:mt-[160px]">
+      <section className="business-section bg-[#000000] h-auto md:h-[180vh] top-0 mt-[0px] md:mt-[0px] text-white p-6 py-30 md:px-6 py-24 md:py-40 lg:py-40 relative overflow-hidden">
+        <div className="flex justify-center items-center font-700 text-[40px] mt-[400px] md:mt-[180px]">
           <h2 className="font-700 text-[40px] text-center">
             The business process problem solvers.
           </h2>
@@ -28,14 +29,25 @@ export function Business() {
             </p>
           </div>
         </div>
-        <div className="top-0 py-12 md:py-20 relative">
-          <div className="max-w-[100%] mx-auto flex flex-col md:flex-row items-center justify-center">
-            <div className="flex flex-col md:flex-row  w:full gap-6 md:gap-6 lg:gap-6">
-              <InsightsNews />
-              <FaqAccordion />
+        <div className="top-0 p-6 pt-12 md:py-40 relative">
+          <div className="max-w-[1247px] mx-auto">
+            <div className="flex flex-col md:flex-row justify-center w-full gap-8">
+              
+                <InsightsNews className="flex-1" />
+            
+                <FaqAccordion className="flex-1" />
+             
             </div>
           </div>
         </div>
+         {/* Polygon background */}
+              <div className="absolute inset-0 opacity-100 z-0 float-right">
+                <img
+                    src={PolygonBackground} 
+                  alt="Polygon Background"
+                  className="max-w-[1348px] h-[calc(1501px + 280px)] mt-[200px] md:mt-[300px] object-contain absolute top-0 right-0"
+                />
+              </div>
       </section>
     </>
   );

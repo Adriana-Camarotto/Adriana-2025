@@ -26,7 +26,7 @@ const news = [
 export function InsightsNews() {
   return (
 
- <div className="insights-news">
+ <div className="insights-news  ">
       <h3>Insights & News</h3>
       <div className="grid gap-4">
         {/* Primeira linha: card principal */}
