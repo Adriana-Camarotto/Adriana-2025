@@ -41,7 +41,7 @@ return (
         {cards.map((card, index) => (
           <div
             key={index}
-            className="group bg-[#FFFFFF] hover:bg-[#F4207B] border-none rounded-lg shadow hover:shadow-lg transition p-12 flex flex-col items-center justify-center text-center animate-fade-in"
+            className="group bg-[#FFFFFF] hover:bg-[#F4207B] border-none rounded-lg shadow hover:shadow-lg transition p-12 flex flex-col items-center justify-center text-center animate-fade-in hover:scale-105 duration-300"
           >
             <img
               src={card.image}

@@ -1,5 +1,5 @@
-import  { useState } from 'react'
-import '../Carousels/testimonial.css'
+import  { useEffect, useRef, useState } from 'react'
+import './Testimonial.css'
 import CaseStudy from '../../assets/caseStudy.png'
 
 
@@ -39,10 +39,28 @@ const testimonials = [
 
 export function TestimonialCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0)
+  const h2Ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!h2Ref.current) return
+      const rect = h2Ref.current.getBoundingClientRect()
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setVisible(true)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+   }, [])
+
+
+
 
   return (
-     <section className="testimonial-section bg-[#FFFFFF] top-0  p-6 md:px-6 py-24 md:py-40 relative  ">    
-      <div className="testimonial-header">
+     <section className="testimonial-section bg-[#FFFFFF] top-0  p-6 md:px-6 py-24 md:py-40 relative z-100 ">    
+      <div className={`testimonial-header fade-in-on-scroll${visible ? ' visible' : ''}`}  ref={h2Ref}>
          <h2>Don’t just take our word for it...</h2>
          <a href="/case-studies">View all Case Studies</a>
        </div>
@@ -50,7 +68,7 @@ export function TestimonialCarousel() {
        {/* Carousel for testimonials */}
 
 
-       <div className="testimonial-fade-wrapper">
+       <div className={`testimonial-fade-wrapper fade-in-on-scroll${visible ? ' visible' : ''}`}  ref={h2Ref}>
          {testimonials.map((item, idx) => (
           <div
             key={idx}
@@ -59,16 +77,17 @@ export function TestimonialCarousel() {
           >
             {selectedIndex === idx && (
               <div
-                className="testimonial-card max-w-[1247px] h-auto relative rounded-lg overflow-hidden"
+                className="testimonial-card w-full h-full object-cover"
                 style={{
                   backgroundImage: `url(${item.image})`,
                   backgroundSize: 'none',
                   backgroundPosition: 'right',
-                  backgroundRepeat: 'no-repeat',                
+                  backgroundRepeat: 'no-repeat',     
+                  
                 }}
               >
                 <div className="testimonial-content p">
-                  <blockquote className="text-[33px] max-w-[742px] pt-2 leading-[1.2] font-700">“{item.text}”</blockquote>
+                  <blockquote className="text-[33px] max-w-[680px] pt-2 leading-[1.2] font-700">“{item.text}”</blockquote>
                   <p className="author text-[12px]">{item.name}</p>
                   <p className="company text-[12px]">{item.company}</p>
                   <div className="embla-dots">

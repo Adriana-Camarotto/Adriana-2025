@@ -8,9 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1247px;
+  max-width: 1248px;
   margin: 0 auto 2rem;
-  padding: 0 1rem;
 }
 
 .testimonial-header h2 {
@@ -33,7 +32,7 @@
 .testimonial-card {
   width: 100%;
   height: auto;
-  max-width: 1247px;
+  max-width: 1248px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;

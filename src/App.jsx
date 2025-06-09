@@ -5,7 +5,9 @@ import Hero from './components/Hero'
 import CardsSection from './components/CardSection'
 import VideoTextSection from './components/VideoTextSection'
 import { LogoCarousel } from './components/Carousels/LogoCarousel'
-import { TestimonialCarousel } from './components/Carousels/testimonialsCarousel'
+import { TestimonialCarousel } from './components/Carousels/TestimonialsCarousel'
+import { Business } from './components/business/Business'
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
       <LogoCarousel />
       <VideoTextSection />
       <TestimonialCarousel />
+      <Business />     
     </div>
   )
 }
