@@ -66,7 +66,7 @@ export default function Footer() {
         <p className="text-center text-xs text-white/70">
           Design & built by Alt · © Document Network Services Ltd 2024
         </p>
-      </div>
+      </div>    
     </footer>
   )
 }
