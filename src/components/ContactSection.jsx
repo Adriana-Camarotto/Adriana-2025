@@ -4,9 +4,9 @@ export function ContactSection() {
   return ( 
     <section className="bg-[#FF3A7A] text-white font-['Gilroy'] relative">
       {/* Intro + Form */}
-      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-3 w-full">
-          <h2 className="w-full md:w-[607px] text-[40x] sm:text-[50px] md:text-[60px] font-bold leading-[1] mb-8">
+          <h2 className="w-full md:w-[607px] text-[40px] sm:text-[55px] md:text-[60px] font-bold leading-[1] mb-8">
             We’re{" "}
             <span
               className="font-extrabold"
@@ -50,7 +50,7 @@ export function ContactSection() {
         <img
           src={PolygonBackground} 
           alt="Polygon Background"
-          className="max-w-[auto] h-[70vh] mr-[800px] mt-[100px] md:mt-[180px]  object-contain absolute top-0 right-0 "
+          className="max-w-[auto] h-[70vh] mr-[0px] md:mr-[920px] mt-[1100px] md:mt-[180px]  object-cover absolute top-0 right-0 "
         />
       </div>
       <Footer />
@@ -58,3 +58,4 @@ export function ContactSection() {
     </section>
   )
 }
+  

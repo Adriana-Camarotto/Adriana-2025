@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Gilroy-black.woff2") format("woff2");
+  font-weight: 700;
+} */
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -10,6 +15,22 @@
   font-family: "IBM Plex Mono";
   src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
   font-weight: 400;
+}
+
+/* Global styles */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 @tailwind base;

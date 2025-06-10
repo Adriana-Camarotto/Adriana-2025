@@ -12,7 +12,7 @@ const faqs = [
   'Do you sell Xerox printers?',
 ]
 
-export function FaqAccordion() {
+export function FaqAccordion({ className = "" }) {
   const [openIndex, setOpenIndex] = useState(null)
 
   const toggle = (index) => {
@@ -20,12 +20,12 @@ export function FaqAccordion() {
   }
 
   return (
-    <div className="faq-section">
+    <div className={`faq-section ${className}`}>
       <h3>FAQ’s</h3>
       <ul className="faq-list">
         {faqs.map((question, index) => (
           <li key={index}>
-            <button onClick={() => toggle(index)} className="faq-toggle w-[100%] md:w-[600px] text-left">
+            <button onClick={() => toggle(index)} className="faq-toggle w-[100%] md:w-[600px] text-left relative">
               {question}
               <span>{openIndex === index ? '-' : '+'}</span>
             </button>

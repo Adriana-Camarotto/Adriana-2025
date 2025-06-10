@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="bg-transparent text-white fixed top-4 left-0 w-full z-50">
       {/* Top bar descktop only */}
-      <div className="hidden  justify-between items-center text-sm px-6 py-2">
+      <div className="hidden bg-[#31297D] opacity-20 justify-between items-center text-sm px-6 py-2">
         <div className="flex items-center gap-10">
           <img src={logo} alt="DNS Logo" href="" className="h-10 w-auto" />
           <span>0845 034 0895</span>

@@ -7,9 +7,8 @@ export default function Footer() {
         {/* Logo + Contact */}
         <div >
           <img src={Logo} alt="Logo" className="h-20 inline-block align-middle mr-2" />
-          </div>
+        </div>
         <div className="space-y-4">
-          
           <div>
             <p className="mb-1 font-400">Contact us</p>
             <p className="text-xs">
@@ -59,14 +58,16 @@ export default function Footer() {
             <li><a href="#">Document Management</a></li>
           </ul>
         </div>
-
       </div>
 
-        <div className="border-t border-white/30 mt-8 pt-6 pb-6">
-        <p className="text-center text-xs text-white/70">
-          Design & built by Alt · © Document Network Services Ltd 2024
+      <div className="mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 border-t border-white/30 mt-8 pt-6 pb-6">
+        <p className="text-center sm:text-left text-xs text-white/70">
+          Design & built by Alt
         </p>
-      </div>    
+        <p className="text-center sm:text-right text-xs text-white/70">
+          © Document Network Services Ltd 2024
+        </p>
+      </div>
     </footer>
   )
 }

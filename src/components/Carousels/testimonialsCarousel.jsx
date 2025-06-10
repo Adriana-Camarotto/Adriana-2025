@@ -59,21 +59,30 @@ export function TestimonialCarousel() {
 
 
   return (
-     <section className="testimonial-section bg-[#FFFFFF] top-0  p-6 md:px-6 py-24 md:py-40 relative z-100 ">    
-      <div className={`testimonial-header fade-in-on-scroll${visible ? ' visible' : ''}`}  ref={h2Ref}>
-         <h2>Don’t just take our word for it...</h2>
-         <a href="/case-studies">View all Case Studies</a>
-       </div>
+    <section className="testimonial-section bg-[#FFFFFF] top-0 p-6 md:px-6 py-12 md:py-40 relative z-100">
+      <div
+        className={`testimonial-header fade-in-on-scroll${visible ? ' visible' : ''} flex flex-col md:flex-row md:items-center md:justify-between gap-2`}
+        ref={h2Ref}
+      >
+        <h2 className="text-xl md:text-3xl mb-2 md:mb-0 color-[#0A151B];">
+          Don’t just take our word for it...
+        </h2>
+        <a
+          href="/case-studies"
+          className="text-blue-600 underline text-base md:text-lg"
+        >
+          View all Case Studies
+        </a>
+      </div>
 
-       {/* Carousel for testimonials */}
-
-
-       <div className={`testimonial-fade-wrapper fade-in-on-scroll${visible ? ' visible' : ''}`}  ref={h2Ref}>
-         {testimonials.map((item, idx) => (
+      {/* Carousel for testimonials */}
+      <div
+        className={`testimonial-fade-wrapper fade-in-on-scroll${visible ? ' visible' : ''}`}
+      >
+        {testimonials.map((item, idx) => (
           <div
             key={idx}
             className={`testimonial-fade-slide${selectedIndex === idx ? ' active' : ''}`}
-             
           >
             {selectedIndex === idx && (
               <div
@@ -82,12 +91,13 @@ export function TestimonialCarousel() {
                   backgroundImage: `url(${item.image})`,
                   backgroundSize: 'none',
                   backgroundPosition: 'right',
-                  backgroundRepeat: 'no-repeat',     
-                  
+                  backgroundRepeat: 'no-repeat',
                 }}
               >
-                <div className="testimonial-content p">
-                  <blockquote className="text-[33px] max-w-[680px] pt-2 leading-[1.2] font-700">“{item.text}”</blockquote>
+                <div className="testimonial-content">
+                  <blockquote className="text-[25px] md:text-[33px] max-w-[680px] pt-2 leading-[1.2] font-700">
+                    “{item.text}”
+                  </blockquote>
                   <p className="author text-[12px]">{item.name}</p>
                   <p className="company text-[12px]">{item.company}</p>
                   <div className="embla-dots">
@@ -102,12 +112,11 @@ export function TestimonialCarousel() {
                     ))}
                   </div>
                 </div>
-              </div>  
+              </div>
             )}
           </div>
-         ))}
-        </div>
-     
+        ))}
+      </div>
     </section>
   )
 }
