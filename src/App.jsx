@@ -10,7 +10,6 @@ import { ExpertStats } from './components/ExpertStats'
 import { ContactSection } from './components/ContactSection'
 import {TestimonialsCarousel} from './components/carousels/TestimonialsCarousel'
 
-
 function App() {
   return (
     <div className="font-sans antialiased text-gray-900">
