@@ -2,7 +2,7 @@
 
 ## React + Vite + Tailwindcss
 
-# Design
+Design:
 
 https://www.figma.com/design/Yg7HazBCnaefNEwgvPFRUo/Alt-Dev-Test?node-id=0-5&t=0iwLXl9Apg9qqGS4-0
 
