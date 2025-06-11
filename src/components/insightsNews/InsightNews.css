@@ -1,11 +1,11 @@
-/* .intro-columns {
+.intro-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   text-align: left;
-  max-width: 1247px;
+  /* max-width: 1247px; */
   margin: 0 auto;
-} */
+}
 
 .insights-news {
   /* padding: 2rem 1rem; */

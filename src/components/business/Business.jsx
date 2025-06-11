@@ -29,17 +29,20 @@ export function Business() {
             </p>
           </div>
         </div>
-        <div className="top-0 p-6 pt-12 md:py-40 relative">
-          <div className="max-w-[1247px] mx-auto">
-            <div className="flex flex-col md:flex-row justify-center w-full gap-8">
+       <div className="max-w-7xl mx-auto p-6 pt-12 md:pt-20 relative z-10">
+          <div className="flex flex-col md:flex-row gap-16">
 
-                <InsightsNews className="flex-1" />
-            
-                <FaqAccordion className="flex-1" />
-             
+
+              {/* Insights & News */}
+              <div className="md:w-1/2">
+                <InsightsNews />
             </div>
-        </div> 
-         
+             {/* FAQ */}
+              <div className="md:w-1/2">
+                <FaqAccordion />
+              </div>
+          </div>
+      
         </div>
          {/* Polygon background */}
               <div className="absolute inset-0 opacity-100 z-0 float-right">
