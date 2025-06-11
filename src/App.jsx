@@ -5,10 +5,10 @@ import Hero from './components/Hero'
 import CardsSection from './components/CardSection'
 import VideoTextSection from './components/VideoTextSection'
 import { LogoCarousel } from './components/Carousels/LogoCarousel'
-import { TestimonialCarousel } from './components/carousels/TestimonialsCarousel'
 import { Business } from './components/business/Business'
 import { ExpertStats } from './components/ExpertStats'
 import { ContactSection } from './components/ContactSection'
+import { TestimonialCarousel } from './components/carousels/TestimonialsCarousel'
 
 
 function App() {
