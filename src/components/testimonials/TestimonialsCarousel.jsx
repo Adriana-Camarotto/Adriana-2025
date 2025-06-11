@@ -1,5 +1,5 @@
 import  { useEffect, useRef, useState } from 'react'
-import './Testimonial.css'
+import '../testimonials/Testimonial.css'
 import CaseStudy from '../../assets/caseStudy.png'
 
 
