@@ -8,7 +8,7 @@ import { LogoCarousel } from './components/Carousels/LogoCarousel'
 import { Business } from './components/business/Business'
 import { ExpertStats } from './components/ExpertStats'
 import { ContactSection } from './components/ContactSection'
-import { TestimonialCarousel } from './components/carousels/TestimonialsCarousel'
+import TestimonialCarousel from './components/carousels/TestimonialsCarousel'
 
 
 function App() {
