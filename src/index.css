@@ -1,9 +1,10 @@
+@import "tailwindcss";
+
 /* @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Gilroy-black.woff2") format("woff2");
   font-weight: 700;
 } */
-
 @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Gilroy-Bold.ttf") format("truetype");

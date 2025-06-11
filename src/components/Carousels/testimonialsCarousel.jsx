@@ -3,8 +3,6 @@ import './Testimonial.css'
 import CaseStudy from '../../assets/caseStudy.png'
 
 
-
-
 const testimonials = [
   {
     text: "We have been delighted with our DNS partnership. The club now has direction & delivery on all document processes with a clear road map for the foreseeable future.",
