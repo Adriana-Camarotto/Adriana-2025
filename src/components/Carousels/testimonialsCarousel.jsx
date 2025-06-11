@@ -38,7 +38,7 @@ const testimonials = [
   },
 ]
 
-export function TestimonialCarousel() {
+export function TestimonialsCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const h2Ref = useRef(null)
   const [visible, setVisible] = useState(false)
