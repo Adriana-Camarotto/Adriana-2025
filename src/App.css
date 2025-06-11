@@ -9,13 +9,45 @@
   background-color: #ffffff;
   font-size: 18px;
 }
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-black.woff2") format("woff2");
+  font-weight: 700;
+} */
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Removed empty body selector for clarity */
 
 h1 {
   font-size: 4.375rem;
@@ -47,17 +79,6 @@ h6 {
 
 p {
   font-family: "IBM Plex Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-/* Remova a animação automática dos títulos */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Gilroy", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* animation: fade-in 1s ease-in; */
 }
 
 button {
