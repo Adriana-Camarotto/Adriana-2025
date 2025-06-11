@@ -1,4 +1,4 @@
-import { FaqAccordion } from '../FAQ/FaqAccordion'
+import { FaqAccordion } from '../faq/FaqAccordion'
 import { InsightsNews } from '../insightsNews/insightsNews';
 import PolygonBackground from '../../assets/geometric.png';
 
