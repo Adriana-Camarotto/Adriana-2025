@@ -17,8 +17,7 @@ function App() {
       <Header />
       <Hero />
       <CardsSection />
-      <LogoCarousel />
-      
+      <LogoCarousel />      
       <VideoTextSection />
       <TestimonialsCarousel />
       <Business />
