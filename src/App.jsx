@@ -8,7 +8,7 @@ import { LogoCarousel } from './components/Carousels/LogoCarousel'
 import { Business } from './components/business/Business'
 import { ExpertStats } from './components/ExpertStats'
 import { ContactSection } from './components/ContactSection'
-import { TestimonialsCarousel } from './components/Carousels/TestimonialsCarousel'
+import { TestimonialCarousel } from './components/carousels/TestimonialCarousel'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <CardsSection />
       <LogoCarousel />
       <VideoTextSection />
-      <TestimonialsCarousel />
+      <TestimonialCarousel />
       <Business />
       <ExpertStats />
       <ContactSection />
