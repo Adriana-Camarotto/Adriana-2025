@@ -58,7 +58,7 @@ export function TestimonialsCarousel() {
 
 
   return (
-    <section className="testimonial-section bg-[#FFFFFF] top-0 p-6 md:px-6 py-12 md:py-40 relative z-100">
+    <section className="testimonial-section bg-[#FFFFFF] top-0 p-6 md:px-6 py-12 md:py-40 ">
       <div
         className={`testimonial-header fade-in-on-scroll${visible ? ' visible' : ''} flex flex-col md:flex-row md:items-center md:justify-between gap-2`}
         ref={h2Ref}

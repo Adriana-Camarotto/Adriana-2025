@@ -3,6 +3,8 @@
   padding: 2rem 1rem;
   text-align: center;
   height: 36vh;
+  position: relative;
+  z-index: 20;
 }
 
 .testimonial-header {
@@ -46,6 +48,7 @@
   color: white;
   text-align: left;
   position: relative;
+  z-index: 50;
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;

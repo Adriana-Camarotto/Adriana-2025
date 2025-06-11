@@ -3,6 +3,8 @@
   background: black;
   color: white;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .intro-columns {
