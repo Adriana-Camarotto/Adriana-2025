@@ -5,20 +5,9 @@
   top: 0;
   left: 0;
   right: 0;
-  /* position: relative; */
-  font-family: "IBM Plex Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #333;
-  background-color: #fdfafa;
+  background-color: #ffffff;
   font-size: 18px;
-}
-
-/* Add this class for fade-in animation */
-.animate-fade-in {
-  animation: fade-in 3s ease-in;
-}
-
-.animate-ping {
-  animation: ping 3s cubic-bezier(0, 0, 1, 2) infinite;
 }
 
 body {
@@ -31,8 +20,36 @@ body {
 h1 {
   font-size: 4.375rem;
   line-height: 1.1;
-  animation: fade-in 1.2s ease-in;
+  animation: fade-in 1s ease-in;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  animation: fade-in 1s ease-in;
+  /* Para animação ao rolar: */
+  &.fade-in-on-scroll,
+  &.fade-in-on-scroll.visible {
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+  &.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  &.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  font-family: "IBM Plex Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Remova a animação automática dos títulos */
 h1,
 h2,
 h3,
@@ -40,7 +57,39 @@ h4,
 h5,
 h6 {
   font-family: "Gilroy", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  animation: fade-in 1.2s ease-in;
+  /* animation: fade-in 1s ease-in; */
+}
+
+button {
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/* Add this class for fade-in animation */
+.animate-fade-in {
+  animation: fade-in 1s ease-in;
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 1, 2) infinite;
+}
+
+/* Classe para fade-in ao scroll */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes fade-in {
