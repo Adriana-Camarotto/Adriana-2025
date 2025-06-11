@@ -1,6 +1,6 @@
 ## Adriana 2025
 
-## React + Vite + taiwild
+## React + Vite + tailwindcss
 
 ## Design
 
