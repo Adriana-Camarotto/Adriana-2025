@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <CardsSection />
       <LogoCarousel />
-
+      
       <VideoTextSection />
       <TestimonialsCarousel />
       <Business />
