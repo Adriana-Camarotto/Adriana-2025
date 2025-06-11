@@ -122,4 +122,4 @@ export function TestimonialsCarousel() {
   )
 }
 
-export default TestimonialCarousel
+export default TestimonialsCarousel
